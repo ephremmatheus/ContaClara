@@ -1,0 +1,5 @@
+main{
+    position: fixed;
+    z-index: 0;
+    padding-left: calc(82px + 20px);
+}
