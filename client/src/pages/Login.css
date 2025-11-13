@@ -57,7 +57,7 @@ border-color: white;
     font-size: 20px;
     gap: 2px;
     color: black;
-    margin:30px;
+    margin:30px 30px 0px 30px;
 }
 
 .voltar span {

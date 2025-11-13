@@ -10,7 +10,7 @@ export const Depoimentos = () => {
                     <span className='depoimento-avaliacao'>★★★★★</span>.
                     <div className="depoimento-cliente">
                         <p className='cliente-nome'> Claudete Costa/Síndica - Edifício Alan</p>
-                        <p>Cliente desde 2024</p>
+                        <p>Cliente desde 2025</p>
                     </div>
                 </div>
             </div>

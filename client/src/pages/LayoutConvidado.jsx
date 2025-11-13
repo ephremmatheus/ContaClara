@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import NavSystem from '../components/NavSystem';
+import NavSistema from '../components/NavSistema';
 import { useState, useEffect } from 'react';
 import './Layout.css';
 
@@ -29,7 +29,7 @@ export default function Layout() {
 
     return (
         <div style={{ display: 'flex' }}>
-            <NavSystem />
+            <NavSistema />
             <main>
                 {/* Compartilha registros e setRegistros para filhos */}
                 <Outlet context={{ registros, setRegistros }} />

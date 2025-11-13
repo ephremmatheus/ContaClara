@@ -62,12 +62,12 @@ export const Nav = (props) => {
                          }
                         } className="nav-links">Funcionalidades</Link>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <Link to="/" onClick={() =>{
                             props.demoScroll();
                             closeMobileMenu();
                          }} className="nav-links">Demostração</Link>
-                    </li>
+                    </li> */}
                     <li className="nav-item">
                         <Link to="/" onClick={()=>{
                             props.contatosScroll();

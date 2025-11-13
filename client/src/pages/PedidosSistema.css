@@ -1,0 +1,122 @@
+.pedidos-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Inter", Arial, sans-serif;
+  color: #222;
+}
+
+.pedidos-tabelas {
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pedidos-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.pedidos-table thead {
+  background-color: #363636;
+  color: white;
+}
+
+.pedidos-table th,
+.pedidos-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.pedidos-table tbody tr:hover {
+  background-color: #f5f8ff;
+}
+
+.pedidos-receita td button {
+  margin-right: 8px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pedidos-receita td button:first-child {
+  background-color: #1b8f25;
+  color: #ffffff;
+}
+
+.pedidos-receita td button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.pedidos-receita td button:hover {
+  opacity: 0.85;
+}
+
+/* ======== MOBILE VIEW (cards) ======== */
+@media (max-width: 750px) {
+  .pedidos-tabelas {
+    background: none;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  .pedidos-table {
+    display: block;
+    border: none;
+    min-width: unset;
+  }
+
+  .pedidos-table thead {
+    display: none;
+  }
+
+  .pedidos-table tbody {
+    display: grid;
+    gap: 16px;
+  }
+
+  .pedidos-table tr {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    border: 1px solid #eee;
+  }
+
+  .pedidos-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border: none;
+    font-size: 0.92rem;
+  }
+
+  .pedidos-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #3b3b3b;
+  }
+
+  .pedidos-receita td:last-child {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  .pedidos-receita td button {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 0.9rem;
+  }
+}

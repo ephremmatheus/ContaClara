@@ -1,0 +1,84 @@
+/* Container geral */
+.prestacao-container {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Título */
+.prestacao-titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.prestacao-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.prestacao-input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Botão */
+.prestacao-btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.prestacao-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Saldo */
+.prestacao-saldo {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Tabelas */
+.prestacao-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.prestacao-table th, .prestacao-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Diferencia receita e despesa */
+.prestacao-receita td {
+    background-color: #e6ffed;
+}
+
+.prestacao-despesa td {
+    background-color: #ffe6e6;
+}
+
+/* Botão excluir */
+.prestacao-remove {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.prestacao-remove:hover {
+    background-color: #e60000;
+}

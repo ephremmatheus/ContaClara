@@ -19,10 +19,15 @@ export default function LoginCadastro(){
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data)
             })
-            
+
             const result = await response.json();
-            setMessage(result.message)
-            setFeedback(result.type);
+            if (result.type == 'success'){
+                localStorage.setItem("token", result.accessToken);
+                localStorage.setItem("user", JSON.stringify(result.tipo));
+                setMessage(result.message);
+                setFeedback(result.type);
+                window.location.href = "/system";
+            }
 
         } catch(err) {
             console.log(err);
@@ -39,10 +44,8 @@ export default function LoginCadastro(){
                 </div>
             </div>
             <div className="voltar">
-                <a href="#" onClick={(e) => {
-                    e.preventDefault();
-                    window.history.back();
-                    }}><span class="material-symbols-outlined">arrow_back</span>Voltar</a>
+                <a href="/cadastro"><span class="material-symbols-outlined">arrow_back</span>Cadastro</a>
+                <a href="/" ><span class="material-symbols-outlined">Home</span> Home</a>
             </div>
             <div className="loginCadastro">
                 <div className="loginCadastro-section">

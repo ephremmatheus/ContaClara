@@ -27,9 +27,6 @@ export default function Sistema() {
         <p>Use a barra de navegação ao lado para navegar pelo sistema!</p>
       </div>
 
-      <div className="img-sistema">
-        <img src="/images/navegacao.png" alt="icone de navegação" />
-      </div>
 
       {/* Outlet: aqui aparecem Prestacao, Registros, etc */}
       <div className="sistema-outlet">

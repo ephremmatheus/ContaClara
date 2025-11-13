@@ -1,0 +1,207 @@
+.registros-container {
+    font-family: Arial, sans-serif;
+    padding: 10;
+}
+
+.registros-titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registros-saldo-acumulado {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.registros-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.registros-card {
+    background-color: #f0f4f7;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.registros-card:hover {
+    transform: translateY(-5px);
+    background-color: #e1ebf5;
+}
+
+.registros-empty {
+    text-align: center;
+    color: #777;
+}
+
+.registros-detalhes {
+    max-width: 800px;
+    margin: 0;
+}
+
+.registros-btn-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+}
+
+.registros-back-btn,
+.registros-save-edit-btn,
+.registros-pdf-btn {
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    white-space: nowrap;
+    flex-shrink: 1;
+}
+
+.registros-back-btn {
+    background-color: #ddd;
+}
+
+.registros-save-edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.registros-pdf-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.registros-table-container {
+    width: 100%;
+    overflow-x: auto; /* permite scroll horizontal em telas pequenas */
+}
+
+.registros-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    min-width: 600px; /* evita quebrar muito colunas pequenas */
+}
+
+.registros-table th,
+.registros-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    word-break: break-word;
+}
+
+.registros-table input,
+.registros-table select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.registros-receita {
+    background-color: #e6f9e6;
+}
+
+.registros-despesa {
+    background-color: #f9e6e6;
+}
+
+.registros-saldo {
+    text-align: right;
+    font-weight: bold;
+}
+
+.scroll-hint {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 5px;
+  display: none;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+
+  .scroll-hint {
+    display: block;
+  }
+
+
+
+    .registros-titulo{
+        text-align: start;
+    }
+
+    .registros-saldo-acumulado{
+        width: 50%;
+    }
+
+    .registros-detalhes {
+        width: 95%;
+    }
+
+    .registros-table-container{
+        width: 40%;
+    }
+
+    .registros-card {
+        width: 45%;
+        padding: 10px;
+    }
+
+    .registros-table th,
+    .registros-table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .registros-back-btn,
+    .registros-save-edit-btn,
+    .registros-pdf-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .registros-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .registros-table {
+        font-size: 11px;
+    }
+
+    .registros-btn-group {
+        flex-direction: column;
+        width: 40%;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .registros-back-btn,
+    .registros-save-edit-btn,
+    .registros-pdf-btn {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .registros-saldo {
+        font-size: 14px;
+    }
+
+    .registros-saldo-acumulado {
+        font-size: 14px;
+    }
+}

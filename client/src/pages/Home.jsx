@@ -44,7 +44,7 @@ export const Home = () => {
             <HeroSection homeRef = {homeRef} comoFuncionaScroll={scrollToComoFunciona}/>
             <Funcionalidades funcionalidadesRef={funcionalidadesRef}/>
             <ComoFunciona comoFuncionaRef={comoFuncionaRef} />
-            <Demonstraçao demoRef = {demoRef} />
+            {/* <Demonstraçao demoRef = {demoRef} /> */}
             <Depoimentos />
             <Footer contatosRef ={contatosRef} />
         </>
