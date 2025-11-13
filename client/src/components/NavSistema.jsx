@@ -38,7 +38,7 @@ export default function NavSistema() {
       <div className="navSistema-content">
         <div className="user">
           <div className="img">
-            <img src="../../public/images/perfil.png" alt="Imagem de perfil" />
+            <img src="/images/perfil.png" alt="Imagem de perfil" />
           </div>
           <p className='user-infos'>
             <span>{nomeCondominio}</span>
